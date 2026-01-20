@@ -19,10 +19,6 @@ This repository is automatically deployed via GitHub Pages:
 - Privacy Policy: https://ealtaca.github.io/simkit-website/privacy-policy
 - Terms of Use: https://ealtaca.github.io/simkit-website/terms-of-use
 
-## Main Repository
-
-SimKit source code: https://github.com/ealtaca/SimBooster
-
 ## License
 
 © 2026 Emre Can Altaca. All rights reserved.
