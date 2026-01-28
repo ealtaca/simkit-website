@@ -1,6 +1,6 @@
 # Privacy Policy for SimKit
 
-**Last Updated: January 20, 2026**
+**Last Updated: January 28, 2026**
 
 ## Introduction
 
@@ -157,9 +157,10 @@ We will respond to all requests within 30 days.
 
 SimKit requests the following macOS permissions:
 
-- **Screen Recording**: To capture simulator screenshots and videos
+- **Screen Recording**: To detect active simulator windows and position the floating debug panel alongside them. Only window metadata (position, size, title) is read — no screen content is captured, stored, or transmitted. Window metadata is held in memory during app runtime only and is never written to disk.
 - **Accessibility**: To detect and interact with simulator windows
-- **File Access**: To save screenshots and videos to your chosen location
+- **File Access**: To save screenshots and videos to your chosen location (~/Downloads by default)
+- **Network (Local)**: To communicate with the companion SDK running inside the Simulator via a local TCP socket. All network communication is strictly localhost only.
 
 These permissions are only used for the app's core functionality and can be revoked in System Settings at any time.
 
@@ -169,6 +170,6 @@ SimKit may include open-source components. A full list of third-party libraries 
 
 ---
 
-**Effective Date:** January 20, 2026
+**Effective Date:** January 28, 2026
 
 By using SimKit, you acknowledge that you have read and understood this Privacy Policy.
