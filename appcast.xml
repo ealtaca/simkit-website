@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>SimKit</title>
+        <item>
+            <title>1.6</title>
+            <pubDate>Fri, 09 Oct 2026 22:43:38 +0300</pubDate>
+            <link>https://ealtaca.github.io/simkit-website</link>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/ealtaca/simkit-website/releases/download/v1.6/SimKit.dmg" length="60061045" type="application/octet-stream" sparkle:edSignature="lD+SuJygdLIJlpvkkmjSw56UL0+tHHNisJdqO5lXOoJMXWG5q8huShNioonjprgjfGAQ5Kd5waCyR7hvAhdjBw=="/>
+        </item>
+    </channel>
+</rss>
