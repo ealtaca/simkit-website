@@ -1,24 +1,9 @@
-# SimKit Website
+# simkit-website
 
-Official website and legal documentation for SimKit - the powerful iOS Simulator enhancement tool for macOS.
+Hosts SimKit's direct-download releases (GitHub Releases, `SimKit.dmg`) and the Sparkle
+appcast that installed apps read at `https://ealtaca.github.io/simkit-website/appcast.xml`.
+The App Store listing's privacy policy also links here.
 
-## Contents
-
-- **Landing Page** (`index.html`) - Main website with features overview
-- **Privacy Policy** (`privacy-policy.md`) - Comprehensive privacy policy
-- **Terms of Use** (`terms-of-use.md`) - Terms and conditions
-
-## Live Site
-
-This repository is automatically deployed via GitHub Pages:
-
-**URL:** https://ealtaca.github.io/simkit-website
-
-## Quick Links
-
-- Privacy Policy: https://ealtaca.github.io/simkit-website/privacy-policy
-- Terms of Use: https://ealtaca.github.io/simkit-website/terms-of-use
-
-## License
-
-© 2026 Emre Can Altaca. All rights reserved.
+The website itself is [ealtaca/simkit-site](https://github.com/ealtaca/simkit-site), served at
+https://simkit.dev. This repo must not get a custom domain: GitHub would then redirect the
+appcast to `http://`, and apps refuse that redirect.
