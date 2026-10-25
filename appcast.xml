@@ -4,28 +4,30 @@
         <title>SimKit</title>
         <item>
             <title>1.7</title>
-            <pubDate>Sun, 25 Oct 2026 18:50:17 +0300</pubDate>
+            <pubDate>Sun, 25 Oct 2026 19:40:57 +0300</pubDate>
             <link>https://ealtaca.github.io/simkit-website</link>
-            <sparkle:version>31</sparkle:version>
+            <sparkle:version>32</sparkle:version>
             <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ealtaca/simkit-website/releases/download/v1.7/SimKit.dmg" length="55860520" type="application/octet-stream" sparkle:edSignature="XMAvRD1cn6r5jogBhdbHyleGhEqFYZt1Bofw/U1w+EsJP7pB4EYsg/2NTpwQYWgDBDUswVqwZGIqC03qx4HiDg=="/>
+            <enclosure url="https://github.com/ealtaca/simkit-website/releases/download/v1.7/SimKit.dmg" length="55878965" type="application/octet-stream" sparkle:edSignature="8RffsjYNMnVE9t6ge7kIhAe66vQrJEGD7eybhaHamzcz0pxsQkWdt1inHxJOK9lRHhKqgjjRmka6uY/MAQvDBA=="/>
             <description><![CDATA[<h2>SimKit 1.7</h2>
 <h3>New</h3>
 <ul>
 <li><b>Graphite</b>, a new dark design for the panel and the Network Monitor.</li>
-<li><b>Request list:</b> query filters (<code>status:&gt;=400 host:api slow:&gt;300ms</code>), a timeline column, p50/p95 in the status bar, and Copy as cURL, fetch, HTTPie or Swift.</li>
+<li><b>Request list:</b> query filters (<code>status:&gt;=400 host:api slow:&gt;300ms</code>), p50/p95 in the status bar, and Copy as cURL, fetch, HTTPie or Swift.</li>
 <li><b>Auth tab:</b> decodes JWTs, shows expiry and which requests use the token. Copied requests hide secrets.</li>
 <li><b>Generate Model:</b> turns a JSON response into Swift Codable types.</li>
 <li><b>Location:</b> paste coordinates or a Maps link, and play GPX routes at walking, biking or driving speed.</li>
 <li><b>Debug tab:</b> Shake (⌃⌥⌘Z) and Memory Warning, which Xcode 27's Device Hub no longer offers.</li>
 <li><b>Window mode:</b> the panel's tabs in a regular window.</li>
+<li>SimKit now opens at login. Turn it off in Settings › General.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
 <li>Xcode 27 and iOS 27: Device Hub is recognized, memory warnings reach apps again, and screenshots and recordings save correctly.</li>
 <li>Apply &amp; Relaunch now really relaunches the app in the new language and time zone.</li>
 <li>Location permission, UserDefaults loading, contract drift and the deep link app lookup work again.</li>
+<li>The Mocked badge no longer wraps, and the request lists are tidier.</li>
 <li>Many smaller fixes across the panel.</li>
 </ul>
 ]]></description>
