@@ -1,175 +1,112 @@
 # Privacy Policy for SimKit
 
-**Last Updated: January 28, 2026**
+**Last Updated: October 30, 2026**
 
 ## Introduction
 
-SimKit ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard information when you use our macOS application.
+SimKit ("we," "our," or "us") is a free macOS app for working with the iOS Simulator. This Privacy Policy explains what SimKit sends off your Mac, what stays on it, and how to turn data collection off.
 
-## Information We Collect
+**In short:** the network traffic, tokens, mocks and captures you work with in SimKit never leave your Mac. SimKit sends anonymous usage data to Google Firebase, including the bundle IDs of the apps you debug, and you can turn that off.
 
-### Analytics Data (Firebase Analytics)
+## What Stays on Your Mac
 
-SimKit uses Firebase Analytics to understand how users interact with the app. This includes:
+Everything you work with in SimKit is stored and processed locally:
 
-- **App usage statistics**: Features used, session duration, app launches
-- **Device information**: macOS version, device model, app version
-- **Crash reports**: Technical diagnostics to improve app stability
-- **Anonymous identifiers**: Firebase-generated IDs (not personally identifiable)
+- Network requests and responses captured from the Simulator, including headers, bodies and tokens
+- Mock endpoints, throttling profiles, GPX routes and other configurations
+- Screenshots, videos and GIFs you capture
+- App preferences
 
-**We do NOT collect:**
-- Your name, email address, or contact information
-- Simulator content or screenshots you create
-- Files or data from your computer
-- Any personally identifiable information (PII)
+This data is never sent to us or to any third party. It is deleted when you delete it in the App or remove SimKit and its data from your Mac.
 
-### Subscription Data (RevenueCat)
+The SimKit SDK, if you add it to your app, talks only to SimKit on the same Mac over the local loopback address (127.0.0.1). It contains no analytics and sends nothing to us.
 
-If you purchase a Pro subscription, RevenueCat processes transaction data in Observer Mode:
+## What SimKit Sends
 
-- **Transaction information**: Purchase receipts, subscription status
-- **Anonymous user ID**: For subscription management
-- **App Store transaction data**: Handled by Apple's secure payment system
+### Anonymous Usage Data (Google Firebase)
 
-**Important:** We never see or store your payment information. All payments are processed by Apple through the App Store.
+Unless you turn it off, SimKit sends the following to Google Firebase Analytics:
 
-### Local Data Storage
+- **Feature usage**: which tools and tabs you open, captures and exports you make, onboarding steps
+- **Errors**: error messages from SimKit and the last few actions that led to them
+- **Simulator details**: the bundle IDs of the apps you select in the Simulator (for example `com.example.myapp`) and the names of simulated devices (for example "iPhone 17 Pro")
+- **Your Mac**: macOS version, chip, memory, screen size, SimKit version
+- **Standard Firebase data**: a random app instance ID, session counts and length, and an approximate country derived from your IP address
 
-SimKit stores preferences and settings locally on your Mac:
+SimKit also writes a small usage report to Google Cloud Firestore: the bundle ID of an app you debugged, a random ID generated for your installation, the day, and the SimKit version. At most one report is written per app per day. The App can only create these reports; it cannot read them back.
 
-- App preferences (screenshot format, save location, etc.)
-- Network monitoring settings
-- Mock endpoint configurations
-- Promo code activation status (if applicable)
+**We do NOT collect:** your name, email address or Apple ID, the contents of any network traffic, tokens, files, screenshots or recordings.
 
-**This data:**
-- Stays on your device only
-- Is never transmitted to our servers
-- Can be deleted by uninstalling the app
+### Update Checks
 
-## How We Use Your Information
+- SimKit reads the latest SDK version from Google Cloud Firestore so it can tell you when a new SDK is available. Nothing about you is written in this check.
+- The DMG version checks for app updates with Sparkle by downloading our appcast from GitHub (ealtaca.github.io). As with any download, GitHub sees your IP address. The Mac App Store version is updated by Apple.
 
-We use collected data to:
+## How to Turn It Off
 
-1. **Improve the app**: Understand which features are most valuable
-2. **Fix bugs**: Identify and resolve technical issues
-3. **Analyze usage patterns**: Make informed decisions about future features
-4. **Manage subscriptions**: Verify Pro tier access and handle renewals
+In SimKit, open **Settings > General** and turn off **Share anonymous usage data**. This stops both the Firebase events (including Firebase's own automatic ones) and the Firestore usage reports. If your version of SimKit does not have this setting yet, update to the latest version, or email us and we will delete the data we hold.
 
-## Data Sharing
+## How We Use the Data
 
-We do NOT sell, rent, or share your data with third parties for marketing purposes.
+1. **Improve the app**: learn which features are used and which are not
+2. **Fix bugs**: find errors and the steps that cause them
+3. **Decide what to build**: see what kinds of apps SimKit is used on
 
-**Third-party services we use:**
+We do not use it for advertising, and we do not sell, rent or share it with anyone for marketing.
 
-- **Firebase (Google)**: Analytics and crash reporting
-  - [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
-- **RevenueCat**: Subscription management (Observer Mode)
-  - [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy)
-- **Apple App Store**: Payment processing
-  - [Apple Privacy Policy](https://www.apple.com/privacy/)
+## Third-Party Services
 
-These services have their own privacy policies and data handling practices.
+- **Google Firebase** (Analytics, Cloud Firestore): [Firebase Privacy and Security](https://firebase.google.com/support/privacy)
+- **GitHub** (hosts DMG downloads and the update feed): [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
+- **Apple** (Mac App Store distribution): [Apple Privacy Policy](https://www.apple.com/privacy/)
 
-## Data Security
-
-We implement industry-standard security measures:
-
-- All data transmission uses HTTPS encryption
-- Local data is protected by macOS security features
-- No passwords or sensitive credentials are stored
-- Firebase and RevenueCat follow SOC 2 compliance standards
-
-## Your Rights and Choices
-
-You have the right to:
-
-### Opt-Out of Analytics
-Currently, analytics collection is enabled by default. You can request opt-out by contacting us at: **ealtaca@gmail.com**
-
-### Delete Your Data
-- **Local data**: Uninstall SimKit to remove all local preferences
-- **Analytics data**: Contact us to request deletion of your Firebase Analytics data
-- **Subscription data**: Managed by Apple; contact Apple Support for deletion requests
-
-### Access Your Data
-You can request a copy of any data we hold about you by emailing **ealtaca@gmail.com**
-
-## Children's Privacy
-
-SimKit is not intended for children under 13. We do not knowingly collect information from children. If you believe a child has provided us with data, please contact us immediately.
-
-## Changes to This Policy
-
-We may update this Privacy Policy periodically. Changes will be reflected by updating the "Last Updated" date at the top of this page.
-
-**Notification of changes:**
-- Material changes will be announced in the app or via the App Store
-- Continued use of SimKit after changes constitutes acceptance
+SimKit 1.6 and earlier, from the Mac App Store, also included RevenueCat for a Pro subscription. SimKit is now free; RevenueCat was removed in version 1.7.
 
 ## Data Retention
 
-- **Analytics data**: Retained by Firebase according to their retention policy (typically 14 months)
-- **Subscription data**: Retained by RevenueCat for the duration of your subscription plus legal requirements
-- **Local preferences**: Stored until you delete the app
-
-## International Users
-
-SimKit is developed in Turkey and complies with applicable data protection laws. If you are located outside Turkey, please note that your data may be transferred to and processed in countries where Firebase and RevenueCat operate.
-
-## Your California Privacy Rights (CCPA)
-
-If you are a California resident, you have additional rights:
-
-- Right to know what personal information is collected
-- Right to delete personal information
-- Right to opt-out of sale of personal information (Note: We do NOT sell personal information)
-
-To exercise these rights, contact us at **ealtaca@gmail.com**
-
-## GDPR Compliance (EU Users)
-
-If you are in the European Union, you have rights under GDPR:
-
-- Right to access your personal data
-- Right to rectification of incorrect data
-- Right to erasure ("right to be forgotten")
-- Right to restrict processing
-- Right to data portability
-- Right to object to processing
-
-**Legal basis for processing:**
-- Legitimate interest: App improvement and analytics
-- Contract performance: Subscription management
-- Consent: Where required by law
-
-## Contact Us
-
-If you have questions, concerns, or requests regarding this Privacy Policy or your data:
-
-**Email:** ealtaca@gmail.com
-**GitHub Issues:** [SimKit Issues](https://github.com/ealtaca/simkit/issues)
-**Developer:** Emre Can Altaca
-
-We will respond to all requests within 30 days.
+- **Firebase Analytics**: kept for up to 14 months, then deleted by Google
+- **Firestore usage reports**: kept while they are useful for product decisions; we will delete them on request
+- **Local data**: kept on your Mac until you delete it
 
 ## Permissions Required
 
 SimKit requests the following macOS permissions:
 
-- **Screen Recording**: To detect active simulator windows and position the floating debug panel alongside them. Only window metadata (position, size, title) is read — no screen content is captured, stored, or transmitted. Window metadata is held in memory during app runtime only and is never written to disk.
+- **Screen Recording**: To detect active simulator windows and position the floating panel alongside them. Only window metadata (position, size, title) is read — no screen content is captured, stored, or transmitted. Window metadata is held in memory while the App runs and is never written to disk.
 - **Accessibility**: To detect and interact with simulator windows
 - **File Access**: To save screenshots and videos to your chosen location (~/Downloads by default)
-- **Network (Local)**: To communicate with the companion SDK running inside the Simulator via a local TCP socket. All network communication is strictly localhost only.
+- **Network (Local)**: To communicate with the SimKit SDK running inside the Simulator over the local loopback address
 
-These permissions are only used for the app's core functionality and can be revoked in System Settings at any time.
+These permissions are only used for the App's core functionality and can be revoked in System Settings at any time.
 
-## Open Source Notice
+## Your Rights
 
-SimKit may include open-source components. A full list of third-party libraries and their licenses can be found in the app's "About" section or on our GitHub repository.
+Wherever you live, you can ask us to access or delete the data we hold about you, or object to its processing, by emailing **ealtaca@gmail.com**. Because the data is anonymous, we may ask you for your SimKit version and roughly when you used it so we can find it.
+
+**EU and UK users (GDPR):** we process usage data on the basis of our legitimate interest in improving SimKit. You have the right to access, rectify, erase, restrict and port your data, and to object to processing. You may also complain to your data protection authority.
+
+**California users (CCPA):** you have the right to know what personal information is collected and to request its deletion. We do not sell or share personal information.
+
+## Children's Privacy
+
+SimKit is a developer tool and is not intended for children under 13. We do not knowingly collect information from children.
+
+## International Users
+
+SimKit is developed in Turkey. Google Firebase and GitHub may process data in other countries, including the United States.
+
+## Changes to This Policy
+
+We will update the date at the top of this page when this policy changes, and note material changes in the App's release notes.
+
+## Contact Us
+
+**Email:** ealtaca@gmail.com
+**GitHub Issues:** [github.com/ealtaca/simkit-website/issues](https://github.com/ealtaca/simkit-website/issues)
+**Developer:** Emre Can Altaca
+
+We will respond to all requests within 30 days.
 
 ---
 
-**Effective Date:** January 28, 2026
-
-By using SimKit, you acknowledge that you have read and understood this Privacy Policy.
+**Effective Date:** October 30, 2026
