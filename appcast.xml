@@ -4,6 +4,29 @@
         <title>SimKit</title>
         <item>
             <title>1.8</title>
+            <pubDate>Mon, 16 Nov 2026 20:04:51 +0300</pubDate>
+            <link>https://ealtaca.github.io/simkit-website</link>
+            <sparkle:version>45</sparkle:version>
+            <sparkle:shortVersionString>1.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/ealtaca/simkit-website/releases/download/v1.8/SimKit.dmg" length="63873250" type="application/octet-stream" sparkle:edSignature="MA8suxRoTYubKylZNZlvnqDs5HJfGKsZYop1BuU8PRM7PmCdkSCpnOnsVO/6I24CJpqXpSvxF0dTjK5sUPHIAw=="/>
+            <description><![CDATA[<h2>SimKit 1.8</h2>
+<h3>New</h3>
+<ul>
+<li><b>Coding agents (MCP):</b> Claude Code, Cursor, Codex and other MCP clients can read captured requests, set mocks and drive the simulator through 91 tools. Turn it on in the Agents tab.</li>
+<li><b>Real devices:</b> pair an iPhone or iPad by a 6-digit code and see its traffic over Wi-Fi, encrypted.</li>
+<li><b>Performance tab:</b> frame rate, memory, CPU and main-thread hangs, with the code each hang was in.</li>
+<li><b>Network:</b> pause capture, Edit &amp; Resend, request origin, token history and Expire Token, bug reports, and insights for refresh storms and duplicate requests.</li>
+<li><b>Mocks:</b> fill a mock from a captured response, Would Match preview, Network Weather and scenario files.</li>
+<li><b>Monitor without the SDK:</b> SimKit can start a simulator app with the SDK loaded into it.</li>
+<li><b>Debug:</b> Snapshots that save and restore an app's data, Steps, the app's console and more.</li>
+<li><b>Also:</b> an accessibility audit, design diff, a map in Location, ⌘K, and Settings › General › Updates.</li>
+</ul>
+<p>Real devices, Performance and request origin need SimKit SDK 1.9.</p>
+]]></description>
+        </item>
+        <item>
+            <title>1.8</title>
             <pubDate>Sun, 15 Nov 2026 20:20:20 +0300</pubDate>
             <link>https://ealtaca.github.io/simkit-website</link>
             <sparkle:channel>beta</sparkle:channel>
