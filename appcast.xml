@@ -3,6 +3,34 @@
     <channel>
         <title>SimKit</title>
         <item>
+            <title>1.8.1</title>
+            <pubDate>Tue, 17 Nov 2026 15:58:20 +0300</pubDate>
+            <link>https://ealtaca.github.io/simkit-website</link>
+            <sparkle:version>46</sparkle:version>
+            <sparkle:shortVersionString>1.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/ealtaca/simkit-website/releases/download/v1.8.1/SimKit.dmg" length="64172213" type="application/octet-stream" sparkle:edSignature="RmZkYePEzltLcwiuglt05zcNe57YfTQ92wtueJKXrky+DP8hjq3PHePuRZbgfELrkFu6lZb7WF9DTAxZKn2QBQ=="/>
+            <description><![CDATA[<h2>SimKit 1.8.1</h2>
+<h3>New for coding agents (MCP)</h3>
+<ul>
+<li><b>Mock folders:</b> agents can put mocks in folders, rename folders and set their order with organize_mocks, the user's mocks included. Nothing but the folder changes, and the reply says which mocks now win a match.</li>
+<li><b>Mocks from real traffic:</b> set_mock can start from a captured request.</li>
+<li><b>App state and screen:</b> get_app_state tells whether an app is running or how it crashed; get_screen_elements reads the screen's elements through the SDK; get_permissions reads an app's permissions.</li>
+<li><b>Simulator:</b> set_time_zone, restart_simulator, slow animations, a custom status bar (time, battery, bars, carrier), GPX routes, and send_memory_warning and get_clipboard on simulators.</li>
+<li><b>Network:</b> save_contract and delete_contract, set_capture_paused, and custom download and upload speeds in set_network_conditions.</li>
+<li><b>Debugging:</b> relaunch_app can wait for a debugger and returns the process id.</li>
+</ul>
+<p>SimKit now has 100 tools for agents.</p>
+<h3>Fixes</h3>
+<ul>
+<li>Deleting a saved notification, deep link, UserDefaults key, keychain item or cookie now asks first.</li>
+<li>Tabs that need a simulator say so instead of acting on none.</li>
+<li>Panel switches keep their colour when SimKit isn't the active app, and cut-off text now wraps.</li>
+<li>Icon-only buttons have names for VoiceOver and tooltips.</li>
+</ul>
+]]></description>
+        </item>
+        <item>
             <title>1.8</title>
             <pubDate>Mon, 16 Nov 2026 20:04:51 +0300</pubDate>
             <link>https://ealtaca.github.io/simkit-website</link>
